@@ -5,6 +5,7 @@ const addButton = document.getElementById("add-button")
 
 addButton.addEventListener("click", () => {
 
+    
     const inputItemText = inputItem.value;
 
     const newItem = createElement('li')

@@ -1,5 +1,44 @@
 body {
     height: 100vh;
     background-color: orange;
-    opacity: 0.5;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    font-family: sans-serif;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+#getItem {
+    display: inline-block;
+    background-color: #e7e7e7;
+    border: none;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+#getItem:hover{
+    box-shadow: 0 12px 16px 0 rgba(125, 184, 176, 0.24),0 17px 50px 0 rgba(10, 87, 97, 0.19);
+ }
+
+#add-button {
+    width: 100px;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Muli', serif;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    color: #4CAF50;
+    -webkit-text-stroke: 0.2px black;
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
