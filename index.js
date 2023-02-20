@@ -8,4 +8,10 @@ addButton.addEventListener("click", () => {
     const inputItemText = inputItem.value;
 
     const newItem = createElement('li')
-})
+
+    newItem.innerText = inputItemText;
+
+    todoList.appendChild(newItem);
+
+    inputItemInput.value = '';
+ });
