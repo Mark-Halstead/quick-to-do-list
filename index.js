@@ -19,6 +19,19 @@ addButton.addEventListener("click", (e) => {
 
     toDoList.appendChild(newItem);
 
+    const deleteButton = document.createElement('button')
+
+   
+    deleteButton.innerText = 'Delete';
+    deleteButton.classList = 'delete-button'
+    toDoList.appendChild(deleteButton);
+
+    const completeButton = document.createElement('button')
+    completeButton.classList = 'complete-button'
+    completeButton.innerText = 'Complete';
+    toDoList.appendChild(completeButton);
+
+
     })
     
  });
