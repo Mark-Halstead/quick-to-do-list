@@ -3,16 +3,24 @@ const toDoList = document.getElementById("to-do-list")
 const addButton = document.getElementById("add-button")
 
 
-addButton.addEventListener("click", () => {
-
+addButton.addEventListener("click", (e) => {
+    e.preventDefault()
+   
     
-    const inputItemText = inputItem.value;
+    let inputItemText = []
+    
+    inputItemText.push(inputItem.value)
+    console.log(inputItemText);
 
-    const newItem = createElement('li')
+    inputItemText.forEach(d => {
+    const newItem = document.createElement('li')
 
-    newItem.innerText = inputItemText;
+    newItem.textContent = d ;
 
-    todoList.appendChild(newItem);
+    toDoList.appendChild(newItem);
 
-    inputItemInput.value = '';
+    })
+    
  });
+
+ 
